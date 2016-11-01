@@ -1,0 +1,72 @@
+.dn-file-type{
+  width: 170px;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  .clearfix();
+  li.icon{
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    float: left;
+    &:nth-child(2n){
+      margin-left: 20px;
+    }
+    &:hover{
+      background-color: #e5e5e5;
+    }
+  }
+  .icon.type-icon-xls{
+    background:url("../img/cm-file-xls.png") no-repeat center center;
+  }
+  .icon.type-icon-ppt{
+    background:url("../img/cm-file-ppt.png") no-repeat center center;
+  }
+  .icon.type-icon-txt{
+    background:url("../img/cm-file-txt.png") no-repeat center center;
+  }
+  .icon.type-icon-jpg{
+    background:url("../img/cm-file-jpg.png") no-repeat center center;
+  }
+  .icon.type-icon-tif{
+    background:url("../img/cm-file-tif.png") no-repeat center center;
+  }
+}
+#savePopover{
+  .popover{
+    left: -123px !important;
+    border-radius: 3px !important;
+  }
+  .popover.bottom > .arrow{
+    left: 77% !important;
+  }
+  .view-type{
+    background-color: #1d835c;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 10px;
+    vertical-align: middle;
+    display: non;
+    .arrow{
+      position: relative;
+      background: #1d835c;
+      margin-right: -11px;
+      &:after{
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #1d835c;
+        border-width: 10px;
+        margin-top: -10px;
+      }
+    }
+
+  }
+}

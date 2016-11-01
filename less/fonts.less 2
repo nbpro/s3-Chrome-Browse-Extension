@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'stag_sansbook';
+  src: url('../fonts/stag_sans-book-webfont.eot');
+  src: url('../fonts/stag_sans-book-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stag_sans-book-webfont.woff') format('woff'),
+  url('../fonts/stag_sans-book-webfont.ttf') format('truetype'),
+  url('../fonts/stag_sans-book-webfont.svg#stag_sansbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'stag_sansmedium';
+  src: url('../fonts/stag_sans-medium-webfont.eot');
+  src: url('../fonts/stag_sans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stag_sans-medium-webfont.woff') format('woff'),
+  url('../fonts/stag_sans-medium-webfont.ttf') format('truetype'),
+  url('../fonts/stag_sans-medium-webfont.svg#stag_sansmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'stag_sanslight';
+  src: url('../fonts/stag_sans-light-webfont.eot');
+  src: url('../fonts/stag_sans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stag_sans-light-webfont.woff') format('woff'),
+  url('../fonts/stag_sans-light-webfont.ttf') format('truetype'),
+  url('../fonts/stag_sans-light-webfont.svg#stag_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'stag_sanssemibold';
+  src: url('../fonts/stag_sans-semibold-webfont.eot');
+  src: url('../fonts/stag_sans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stag_sans-semibold-webfont.woff') format('woff'),
+  url('../fonts/stag_sans-semibold-webfont.ttf') format('truetype'),
+  url('../fonts/stag_sans-semibold-webfont.svg#stag_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'stag_sansthin';
+  src: url('../fonts/stag_sans-thin-webfont.eot');
+  src: url('../fonts/stag_sans-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stag_sans-thin-webfont.woff') format('woff'),
+  url('../fonts/stag_sans-thin-webfont.ttf') format('truetype'),
+  url('../fonts/stag_sans-thin-webfont.svg#stag_sansthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body{
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/// icons
+
+@font-face {
+  font-family: 'CultureMachine';
+  src:url('../fonts/CultureMachine.eot?lbo5vn');
+  src:url('../fonts/CultureMachine.eot?lbo5vn#iefix') format('embedded-opentype'),
+  url('../fonts/CultureMachine.ttf?lbo5vn') format('truetype'),
+  url('../fonts/CultureMachine.woff?lbo5vn') format('woff'),
+  url('../fonts/CultureMachine.svg?lbo5vn#CultureMachine') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'CultureMachine';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo-icon:before {
+  content: "\e600";
+}
+.icon-logo:before {
+  content: "\e601";
+}
+.icon-track:before {
+  content: "\e602";
+}
+.icon-file:before {
+  content: "\e603";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-channel:before {
+  content: "\e605";
+}
+.icon-track2:before {
+  content: "\e606";
+}
+.icon-female:before {
+  content: "\e607";
+}
+.icon-male:before {
+  content: "\e608";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-star:before {
+  content: "\f005";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-signal:before {
+  content: "\f012";
+}
+.icon-download:before {
+  content: "\f019";
+}
+.icon-tags:before {
+  content: "\f02c";
+}
+.icon-bookmark:before {
+  content: "\f02e";
+}
+.icon-list:before {
+  content: "\f03a";
+}
+.icon-video-camera:before {
+  content: "\f03d";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-plus-circle:before {
+  content: "\f055";
+}
+.icon-minus-circle:before {
+  content: "\f056";
+}
+.icon-times-circle:before {
+  content: "\f057";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-question-circle:before {
+  content: "\f059";
+}
+.icon-info-circle:before {
+  content: "\f05a";
+}
+.icon-plus:before {
+  content: "\f067";
+}
+.icon-minus:before {
+  content: "\f068";
+}
+.icon-exclamation-circle:before {
+  content: "\f06a";
+}
+.icon-calendar:before {
+  content: "\f073";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-lightbulb-o:before {
+  content: "\f0eb";
+}
+.icon-bell-o:before {
+  content: "\f0f3";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-pause:before {
+  content: "\f04c";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\f0da";
+}
+.icon-play-circle-o:before {
+  content: "\f01d";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-clock-o:before {
+  content: "\f017";
+}
+.icon-flag:before {
+  content: "\f024";
+}
+.icon-stop:before {
+  content: "\f04d";
+}
+.icon-long-arrow-down:before {
+  content: "\f175";
+}
+.icon-long-arrow-up:before {
+  content: "\f176";
+}
+.icon-long-arrow-left:before {
+  content: "\f177";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
+.icon-settings:before {
+  content: "\e609";
+}
+.icon-auth:before {
+  content: "\e60a";
+}
+.icon-settings-circle:before {
+  content: "\e900";
+}
+.icon-trash-o:before {
+  content: "\f014";
+}
+
+//custom
+.icon-chevron:before {
+  content: "\f054\f053";
+}
+//date picker overwrite arrows
+.icon-arrow-left:before {
+  content: "\f053";
+}
+.icon-arrow-right:before {
+  content: "\f054";
+}
+.icon-chev:before {
+  content: "\f078";
+}
+.icon-chev.collapsed:before {
+  content: "\f054";
+}

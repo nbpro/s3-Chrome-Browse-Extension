@@ -1,0 +1,73 @@
+// custom mixin for culture machine..
+.border-radius(@radius){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+//remove blue glow onfocus
+.tab-focus() {
+  // Default
+  outline: 0 none;
+  // WebKit
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.font-icon(){
+  font-family: 'CultureMachine';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-icon(){
+  .font-icon();
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 100%;
+  font-size: 18px;
+  color: #ff7200;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  background: #ffcd46;
+}
+
+.cm-iconbox-color(@boxColor:#FFFFFF,@txtColor:#000000){
+  background-color: @boxColor;
+  color:@txtColor ;
+}
+
+.box-txt-center(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-flex-line-pack: center;
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center;
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  text-align: center;
+}
