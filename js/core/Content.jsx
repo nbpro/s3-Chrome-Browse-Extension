@@ -1,5 +1,7 @@
 var React = require('react');
 
+let MainContainer = require('./MainContainerBox.jsx');
+
 var Content = React.createClass({
 
     getInitialState: function() {
@@ -13,6 +15,7 @@ var Content = React.createClass({
     render: function(){
         return(
             <div className="main">
+                <MainContainer/>
             </div>
         )
     }

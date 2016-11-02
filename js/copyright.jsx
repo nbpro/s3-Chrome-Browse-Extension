@@ -5,7 +5,7 @@ var copyrightStyle = 'copyright';
 var CopyRight = React.createClass({
     render : function(){
         return(
-            <div className={copyrightStyle}>@copyright 2016 </div>
+            <div className={copyrightStyle}>Build with Love by Neerajpro </div>
         )
     }
 });

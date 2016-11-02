@@ -1,7 +1,12 @@
 let React = require('react');
 
 let MainContainerBox = React.createClass({
+    render :function() {
+        return(
+            <div>Main Box Container</div>
+        )
+    }
 
 });
 
-exports = MainContainerBox;
+module.exports = MainContainerBox;
