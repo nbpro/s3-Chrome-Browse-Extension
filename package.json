@@ -30,12 +30,14 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^4.1.0",
-    "aws-sdk":"^2.6.12"
+    "aws-sdk": "^2.6.12"
   },
   "dependencies": {
     "jsdom": "^9.8.3",
     "location": "0.0.1",
     "navigator": "^1.0.1",
+    "react-foundation": "^0.7.0",
+    "react-modal": "^1.5.2",
     "xmlhttprequest": "^1.8.0"
   }
 }
