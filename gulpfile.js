@@ -9,6 +9,7 @@ var copy = require('gulp-copy')
 	,gulpLess = require('gulp-less')
 	,gulpUglify = require('gulp-uglify')
 	,reactify = require('reactify')
+	,babelify = require("babelify")
 	,source = require("vinyl-source-stream");
 
 var argv = require('yargs').argv
@@ -33,11 +34,15 @@ gulp.task('browserify', function(){
 	if(!argv.prod) gulp.watch(statics, ['init']);
 
 	return browserify({debug: true})
-		.transform(reactify)
+		.transform(reactify,babelify,{presets: ["es2015", "react"]})
 		.add('js/app.jsx')
 		.bundle()
 		.pipe(source("app.js"))
 		.pipe(buffer())
+		//.pipe(babel({
+		//	presets: ['es2015'],
+		//	plugins: ['transform-runtime'],
+		//}))
 		.pipe(gulpIf(argv.prod, gulpUglify()))
 		.pipe(gulp.dest('./build/js'));
 });

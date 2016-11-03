@@ -1,8 +1,8 @@
 {
-  "name": "App name",
-  "description": "App description.",
+  "name": "S3 Browser Chrome Extension",
+  "description": "Chrome Extension to upload and download files",
   "version": "1.0.0.0",
-  "short_name": "App short name",
+  "short_name": "S3-Chrome-Extension",
   "manifest_version":2,
   "app": {
     "launch":{

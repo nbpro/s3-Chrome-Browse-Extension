@@ -1,9 +1,13 @@
 let React = require('react');
 
+let NavigationContainer = require('./NavigationContainer.jsx');
+
 let MainContainerBox = React.createClass({
     render :function() {
         return(
-            <div>Main Box Container</div>
+            <div className="">
+                <NavigationContainer/>
+            </div>
         )
     }
 
