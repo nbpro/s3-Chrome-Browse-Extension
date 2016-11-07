@@ -1,6 +1,16 @@
 let React = require('react');
-var Modal = require('react-modal');
-import {Button,Colors}  from 'react-foundation';
+let Modal = require('react-modal');
+let S3ConnectionFormComponent = require('./S3ConnectionFormComponent.jsx');
+import {Button,
+        Colors,
+        CloseButton,
+        Label,
+        Row,
+        Column,
+        Callout,
+        Block,
+        Breakpoints
+        }from 'react-foundation';
 
 const customStyles = {
     content : {
@@ -9,7 +19,9 @@ const customStyles = {
         right                 : 'auto',
         bottom                : 'auto',
         marginRight           : '-50%',
-        transform             : 'translate(-50%, -50%)'
+        transform             : 'translate(-50%, -50%)',
+        height                : '80%',
+        width                 : '70%'
     },
 };
 
@@ -50,9 +62,15 @@ let NavigationContainer = React.createClass({
                         style={customStyles}
                         contentLabel="S3-Chrome-Extension-Connection-test"
                     >
-                        <i onClick={this.closeModal}>close</i>
-                        <div>this is connection modal container</div>
-                        <form></form>
+                        <div className="Right">
+                            <CloseButton onClick={this.closeModal}>x</CloseButton>
+                        </div>
+                        <div className="navigation-label">
+                            <Label>Connection Details</Label>
+                        </div>
+                        <form>
+                            <S3ConnectionFormComponent/>
+                        </form>
                     </Modal>
                 </div>
             </div>
