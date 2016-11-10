@@ -1,6 +1,6 @@
 let React = require('react');
 let Modal = require('react-modal');
-let S3ConnectionFormComponent = require('./S3ConnectionFormComponent.jsx');
+import FormComponent,{Text,SubmitButton} from './Form.jsx';
 import {Button,
         Colors,
         CloseButton,
@@ -68,9 +68,25 @@ let NavigationContainer = React.createClass({
                         <div className="navigation-label">
                             <Label>Connection Details</Label>
                         </div>
-                        <form>
-                            <S3ConnectionFormComponent/>
-                        </form>
+                        <Form onSubmit={data => console.log(data)}>
+                            <Text
+                                name="name"
+                                validate={['required']}
+                                placeholder="Type your name here"
+                                label="Your name"/>
+                            <Text
+                                name="email"
+                                validate={['required', 'email']}
+                                placeholder="Type your email here"
+                                label="E-mail"/>
+                            <Text
+                                name="website"
+                                validate={['url']}
+                                placeholder="Type your website url here"
+                                label="Website"/>
+
+                            <SubmitButton/>
+                        </Form>
                     </Modal>
                 </div>
             </div>
