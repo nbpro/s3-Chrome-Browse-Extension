@@ -1,6 +1,5 @@
 /**
  * created by @neerajpro */
-// app/core/S3-Connection-Form/Form.js
 import React, {PropTypes} from 'react';
 import without from 'lodash.without';
 import assign from 'lodash.assign';

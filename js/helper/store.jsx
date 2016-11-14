@@ -1,4 +1,4 @@
-import * as c from './constants';
+import * as c from './constant.jsx';
 import assign from 'lodash.assign';
 
 /**

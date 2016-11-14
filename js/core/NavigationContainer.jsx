@@ -1,15 +1,16 @@
 let React = require('react');
 let Modal = require('react-modal');
-import FormComponent,{Text,SubmitButton} from './Form.jsx';
+import Form,{Text,SubmitButton}  from './FormWrapper.jsx';
+
 import {Button,
-        Colors,
         CloseButton,
         Label,
         Row,
         Column,
         Callout,
         Block,
-        Breakpoints
+        Breakpoints,
+        Colors
         }from 'react-foundation';
 
 const customStyles = {
@@ -22,7 +23,7 @@ const customStyles = {
         transform             : 'translate(-50%, -50%)',
         height                : '80%',
         width                 : '70%'
-    },
+    }
 };
 
 /**
@@ -48,6 +49,11 @@ let NavigationContainer = React.createClass({
         this.setState({modalIsOpen: false});
     },
 
+    saveData: function(e){
+        debugger;
+      console.log(e);
+    },
+
     render : function(){
         return(
             <div className="navigation-container">
@@ -68,7 +74,7 @@ let NavigationContainer = React.createClass({
                         <div className="navigation-label">
                             <Label>Connection Details</Label>
                         </div>
-                        <Form onSubmit={data => console.log(data)}>
+                        <Form onSubmit={this.saveData}>
                             <Text
                                 name="name"
                                 validate={['required']}
@@ -91,7 +97,7 @@ let NavigationContainer = React.createClass({
                 </div>
             </div>
         );
-    },
+    }
 });
 
 module.exports = NavigationContainer;
