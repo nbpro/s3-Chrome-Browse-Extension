@@ -20,7 +20,7 @@ export default class HomePage extends React.PureComponent {
     return (
       <div>
         <Helmet>
-          <title>S3 Assist</title>
+          <title>Giphy Image Explorer</title>
           <meta name="description" content="S3 Assist | Manages all your s3" />
         </Helmet>
         <Header/>

@@ -1,8 +1,8 @@
 {
-  "name": "Lexheal",
+  "name": "S3-File-Explorer",
   "version": "2.0.0",
   "description": "A minimal react-redux boilerplate with all the best practices",
-  "author": "Lexheal",
+  "author": "neerajpro",
   "scripts": {
     "prebuild": "npm run build:clean",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",

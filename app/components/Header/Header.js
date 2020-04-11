@@ -5,7 +5,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <header>
-        This is header Component
+        <h1 className="header-text">Giphy Image Explorer</h1>
       </header>
     );
   }
